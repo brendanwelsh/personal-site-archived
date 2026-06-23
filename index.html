@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brendan Welsh — Projects</title>
+  <meta name="description" content="A showcase of Brendan Welsh's public projects: fun sites, browser games, Stream Deck & Ulanzi hardware plugins, desktop ricing, controller skins, and curated lists." />
+  <meta name="author" content="Brendan Welsh" />
+
+  <!-- Favicons (shark logo) -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <meta name="theme-color" content="#0a1929" />
+
+  <!-- Social cards -->
+  <meta property="og:title" content="Brendan Welsh — Projects" />
+  <meta property="og:description" content="Fun sites, browser games, hardware plugins, desktop ricing, and curated lists." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://brendanwelsh.github.io" />
+  <meta property="og:image" content="https://brendanwelsh.github.io/apple-touch-icon.png" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="hero">
+    <img class="hero-logo" src="chum-logo.png" alt="Chum the shark logo" width="120" height="120" />
+    <h1>Brendan Welsh</h1>
+    <p class="tagline">Streamer-brained tinkerer. I build fun sites, browser games, hardware-dial plugins, and over-engineered desktop setups — mostly with a shark involved.</p>
+    <nav class="hero-links">
+      <a href="https://github.com/brendanwelsh" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://chumthewaters.com" target="_blank" rel="noopener">chumthewaters.com</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- FUN SITES -->
+    <section class="group">
+      <h2 class="group-title"><span class="emoji">🌊</span> Fun Sites</h2>
+      <p class="group-sub">Little web toys living on their own domains.</p>
+      <div class="cards">
+
+        <article class="card">
+          <h3 class="card-title">chumthewaters.com</h3>
+          <p class="card-desc">A shark fun page — the home base for all things Chum.</p>
+          <div class="card-links">
+            <a class="link-live" href="https://chumthewaters.com" target="_blank" rel="noopener">Live</a>
+            <a class="link-repo" href="https://github.com/brendanwelsh/chumthewaters.com" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3 class="card-title">lightthebe.am</h3>
+          <p class="card-desc">Light the Beam — a Sacramento Kings fan page for celebrating the win.</p>
+          <div class="card-links">
+            <a class="link-live" href="https://lightthebe.am" target="_blank" rel="noopener">Live</a>
+            <a class="link-repo" href="https://github.com/brendanwelsh/lightthebe.am" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- APPS & GAMES -->
+    <section class="group">
+      <h2 class="group-title"><span class="emoji">🎮</span> Apps &amp; Games</h2>
+      <p class="group-sub">Browser games and self-hosted tools — several playable right in the tab.</p>
+      <div class="cards">
+
+        <article class="card">
+          <h3 class="card-title">chumball</h3>
+          <p class="card-desc">Rocket-League-style 3D shark soccer in space (Three.js). Fly a shark with a DualSense and rocket-boost a bloody ball into the goal against an AI bot.</p>
+          <div class="card-links">
+            <a class="link-live" href="https://brendanwelsh.github.io/chumball/" target="_blank" rel="noopener">Play</a>
+            <a class="link-repo" href="https://github.com/brendanwelsh/chumball" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3 class="card-title">chumstick-rhythm</h3>
+          <p class="card-desc">A dual-analog-stick rhythm game for the DualSense — flick the thumbsticks to the beat. Web Audio + Canvas, no build step.</p>
+          <div class="card-links">
+            <a class="link-live" href="https://brendanwelsh.github.io/chumstick-rhythm/" target="_blank" rel="noopener">Play</a>
+            <a class="link-repo" href="https://github.com/brendanwelsh/chumstick-rhythm" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3 class="card-title">chumthesizer</h3>
+          <p class="card-desc">A tactile, OP-1-inspired groovebox you play with a Magic Trackpad, an Ulanzi dial, and a Stream Deck pedal. Fifteen voices, a multitrack looper, pure Web Audio.</p>
+          <div class="card-links">
+            <a class="link-live" href="https://brendanwelsh.github.io/chumthesizer/" target="_blank" rel="noopener">Live</a>
+            <a class="link-repo" href="https://github.com/brendanwelsh/chumthesizer" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3 class="card-title">ballshark</h3>
+          <p class="card-desc">Self-hosted Rocket League stats tracker: local Stats API socket → SQLite, with Discord embeds, a dashboard, and an OBS overlay. No third-party services.</p>
+          <div class="card-links">
+            <a class="link-repo" href="https://github.com/brendanwelsh/ballshark" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3 class="card-title">clocket-league</h3>
+          <p class="card-desc">Live Rocket League scoreboard on an AWTRIX pixel clock (Ulanzi TC001). Reads RL's local Stats API — no cloud.</p>
+          <div class="card-links">
+            <a class="link-repo" href="https://github.com/brendanwelsh/clocket-league" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- HARDWARE & PLUGINS -->
+    <section class="group">
+      <h2 class="group-title"><span class="emoji">🎛️</span> Hardware &amp; Plugins</h2>
+      <p class="group-sub">Stream Deck and Ulanzi dial plugins, plus reverse-engineering notes.</p>
+      <div class="cards">
+
+        <article class="card">
+          <h3 class="card-title">obs-telestrator</h3>
+          <p class="card-desc">Madden-style telestration for OBS Studio — draw arrows, shapes, and freehand ink on your live output. Native C++/libobs plugin with Stream Deck &amp; Ulanzi dial control.</p>
+          <div class="card-links">
+            <a class="link-repo" href="https://github.com/brendanwelsh/obs-telestrator" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3 class="card-title">streamdeck-audioswap</h3>
+          <p class="card-desc">Stream Deck+ dial plugin to swap the Windows default audio output between two devices, with master-volume control. Fully configurable.</p>
+          <div class="card-links">
+            <a class="link-repo" href="https://github.com/brendanwelsh/streamdeck-audioswap" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3 class="card-title">streamdeck-cameradials</h3>
+          <p class="card-desc">Stream Deck+ dial plugin to scroll RTSP / UniFi Protect cameras into an mpv viewer. Configurable, with no hard-coded cameras.</p>
+          <div class="card-links">
+            <a class="link-repo" href="https://github.com/brendanwelsh/streamdeck-cameradials" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3 class="card-title">ulanzi-camera-switcher</h3>
+          <p class="card-desc">Drive a live security-camera viewer from a hardware dial: rotate to switch cameras, press to open/close mpv. Works with any RTSP/ONVIF camera — UniFi Protect, Reolink, Frigate, and more.</p>
+          <div class="card-links">
+            <a class="link-repo" href="https://github.com/brendanwelsh/ulanzi-camera-switcher" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3 class="card-title">ulanzi-d100h-homebrew</h3>
+          <p class="card-desc">Community reverse-engineering notes for the Ulanzi D100H Dial Creative Controller: HID protocol, Ulanzi Studio internals, and plugin SDK gotchas.</p>
+          <div class="card-links">
+            <a class="link-repo" href="https://github.com/brendanwelsh/ulanzi-d100h-homebrew" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3 class="card-title">ulanzi-pixel-clock-awtrix</h3>
+          <p class="card-desc">A guide and curated resources for the Ulanzi TC001 Pixel Clock and AWTRIX firmware: hardware, flashing, the MQTT/HTTP API, Home Assistant integrations, and community projects.</p>
+          <div class="card-links">
+            <a class="link-repo" href="https://github.com/brendanwelsh/ulanzi-pixel-clock-awtrix" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- DESKTOP RICING -->
+    <section class="group">
+      <h2 class="group-title"><span class="emoji">🖥️</span> Desktop Ricing</h2>
+      <p class="group-sub">Windows tiling-WM setups and wallpaper-synced theming.</p>
+      <div class="cards">
+
+        <article class="card">
+          <h3 class="card-title">yasb-wallpaper-engine-color-sync</h3>
+          <p class="card-desc">Tint your YASB bar and Windows taskbar to match your Wallpaper Engine wallpaper. Komorebi-friendly; taskbar via TranslucentTB.</p>
+          <div class="card-links">
+            <a class="link-repo" href="https://github.com/brendanwelsh/yasb-wallpaper-engine-color-sync" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3 class="card-title">awesome-komorebi</h3>
+          <p class="card-desc">A curated list of resources for komorebi, the Windows tiling window manager.</p>
+          <div class="card-links">
+            <a class="link-repo" href="https://github.com/brendanwelsh/awesome-komorebi" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3 class="card-title">awesome-wallpaper-engine</h3>
+          <p class="card-desc">A curated list of Wallpaper Engine tools and integrations.</p>
+          <div class="card-links">
+            <a class="link-repo" href="https://github.com/brendanwelsh/awesome-wallpaper-engine" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- GAMING SKINS -->
+    <section class="group">
+      <h2 class="group-title"><span class="emoji">🎯</span> Controller Skins</h2>
+      <p class="group-sub">White controller skins for gamepadviewer.com overlays.</p>
+      <div class="cards">
+
+        <article class="card">
+          <h3 class="card-title">elite-series-2-white</h3>
+          <p class="card-desc">An Xbox Elite Series 2 (white) skin for gamepadviewer.com.</p>
+          <div class="card-links">
+            <a class="link-live" href="https://brendanwelsh.github.io/elite-series-2-white/" target="_blank" rel="noopener">Live</a>
+            <a class="link-repo" href="https://github.com/brendanwelsh/elite-series-2-white" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3 class="card-title">playstation-ds5-white</h3>
+          <p class="card-desc">A DualSense (DS5) white skin for gamepadviewer.com.</p>
+          <div class="card-links">
+            <a class="link-live" href="https://brendanwelsh.github.io/playstation-ds5-white/" target="_blank" rel="noopener">Live</a>
+            <a class="link-repo" href="https://github.com/brendanwelsh/playstation-ds5-white" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- LISTS & PERSONAL -->
+    <section class="group">
+      <h2 class="group-title"><span class="emoji">📚</span> Lists &amp; Personal</h2>
+      <p class="group-sub">Curated collections and a long-running photo log.</p>
+      <div class="cards">
+
+        <article class="card">
+          <h3 class="card-title">awesome-stream-deck</h3>
+          <p class="card-desc">A curated list of awesome plugins, tools, libraries, icons, and resources for the Elgato Stream Deck.</p>
+          <div class="card-links">
+            <a class="link-repo" href="https://github.com/brendanwelsh/awesome-stream-deck" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3 class="card-title">battlestation-evolution</h3>
+          <p class="card-desc">A photo log of my battlestation as it's evolved over the years.</p>
+          <div class="card-links">
+            <a class="link-repo" href="https://github.com/brendanwelsh/battlestation-evolution" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Built by Brendan Welsh · <a href="https://github.com/brendanwelsh" target="_blank" rel="noopener">@brendanwelsh</a></p>
+    <p class="footer-note">🦈 Stay chummy.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,238 @@
+/* ===== Brendan Welsh — project showcase ===== */
+/* Oceanic dark theme to match the Chum shark logo. Framework-free. */
+
+:root {
+  --bg: #0a1929;
+  --bg-2: #0d2138;
+  --surface: #102a44;
+  --surface-hover: #16395c;
+  --border: #234e74;
+  --text: #e8f1f8;
+  --text-dim: #9fb8cc;
+  --accent: #38bdf8;       /* shark-water cyan */
+  --accent-2: #22d3ee;
+  --live: #34d399;         /* green = live/playable */
+  --live-bg: rgba(52, 211, 153, 0.12);
+  --repo-bg: rgba(56, 189, 248, 0.10);
+  --shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+  --radius: 16px;
+  --maxw: 1120px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  background-image:
+    radial-gradient(1200px 600px at 50% -200px, rgba(56, 189, 248, 0.16), transparent 60%),
+    linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+  background-attachment: fixed;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.bg-glow {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(600px 400px at 85% 10%, rgba(34, 211, 238, 0.08), transparent 70%),
+    radial-gradient(500px 500px at 10% 90%, rgba(56, 189, 248, 0.06), transparent 70%);
+}
+
+main, .hero, .site-footer { position: relative; z-index: 1; }
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ===== Hero ===== */
+.hero {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 72px 24px 40px;
+  text-align: center;
+}
+
+.hero-logo {
+  width: 120px;
+  height: 120px;
+  filter: drop-shadow(0 6px 20px rgba(56, 189, 248, 0.35));
+  animation: bob 5s ease-in-out infinite;
+}
+
+@keyframes bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 6vw, 3.4rem);
+  margin: 18px 0 8px;
+  letter-spacing: -0.02em;
+  background: linear-gradient(180deg, #ffffff, #bfe3f7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.tagline {
+  max-width: 640px;
+  margin: 0 auto 22px;
+  color: var(--text-dim);
+  font-size: 1.08rem;
+}
+
+.hero-links {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-links a {
+  display: inline-block;
+  padding: 9px 18px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: border-color 0.18s, background 0.18s, transform 0.18s;
+}
+
+.hero-links a:hover {
+  text-decoration: none;
+  border-color: var(--accent);
+  background: var(--surface-hover);
+  transform: translateY(-2px);
+}
+
+/* ===== Groups ===== */
+main {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 16px 24px 24px;
+}
+
+.group { margin: 48px 0; }
+
+.group-title {
+  font-size: 1.5rem;
+  margin: 0 0 2px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  letter-spacing: -0.01em;
+}
+
+.group-title .emoji { font-size: 1.4rem; }
+
+.group-sub {
+  margin: 0 0 22px;
+  color: var(--text-dim);
+  font-size: 0.98rem;
+}
+
+/* ===== Card grid ===== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px 22px 18px;
+  box-shadow: var(--shadow);
+  transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  background: var(--surface-hover);
+}
+
+.card-title {
+  margin: 0 0 8px;
+  font-size: 1.15rem;
+  font-family: "SFMono-Regular", ui-monospace, "Cascadia Code", Consolas, monospace;
+  color: #ffffff;
+  word-break: break-word;
+}
+
+.card-desc {
+  margin: 0 0 18px;
+  color: var(--text-dim);
+  font-size: 0.95rem;
+  flex: 1;
+}
+
+.card-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.card-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+.card-links a:hover { text-decoration: none; transform: translateY(-1px); filter: brightness(1.12); }
+
+.link-live {
+  color: var(--live);
+  background: var(--live-bg);
+  border-color: rgba(52, 211, 153, 0.35);
+}
+.link-live::before { content: "▶"; font-size: 0.7em; }
+
+.link-repo {
+  color: var(--accent);
+  background: var(--repo-bg);
+  border-color: rgba(56, 189, 248, 0.30);
+}
+.link-repo::before { content: "★"; font-size: 0.8em; }
+
+/* ===== Footer ===== */
+.site-footer {
+  max-width: var(--maxw);
+  margin: 40px auto 0;
+  padding: 36px 24px 56px;
+  text-align: center;
+  color: var(--text-dim);
+  border-top: 1px solid var(--border);
+}
+
+.site-footer p { margin: 4px 0; }
+.footer-note { font-size: 0.95rem; opacity: 0.85; }
+
+/* ===== Responsive ===== */
+@media (max-width: 560px) {
+  .hero { padding-top: 52px; }
+  .cards { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-logo { animation: none; }
+  html { scroll-behavior: auto; }
+}
