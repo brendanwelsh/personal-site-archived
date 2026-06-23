@@ -1,0 +1,9 @@
+# Local-only project notes (not for the public repo)
+CLAUDE.md
+
+# OS / editor junk
+Thumbs.db
+Desktop.ini
+.DS_Store
+*~
+.vscode/
